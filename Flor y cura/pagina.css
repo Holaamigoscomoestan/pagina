@@ -1,0 +1,463 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+.nav
+{
+width: 100%;
+height: 15%;
+background-color: #e0ffd2;
+display: flex;
+align-items: center;
+justify-content: space-between;
+transition: all 0.5s ease;
+padding: 1px;
+position: fixed;
+z-index: 3;
+}
+.menu
+{
+    display: flex;
+}
+.menu li
+{
+    list-style: none;
+    margin: 25px;
+} 
+.menu li a
+{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.menu li a:hover
+{
+    padding: 5px 10px;
+    background: forestgree;
+    color: black;
+    border-radius: 15px;
+}
+.logo1
+{
+padding: 25px;    
+float: left;
+width: 250px;
+height: 100px;
+}
+  
+
+/**/
+
+.plt
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    height: 100vh;
+}
+.plt figure
+{
+position: relative;
+height: 250px;
+width: 350px;
+overflow: hidden;
+border-radius: 6px;
+box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+cursor: pointer;
+}
+.plt figure img
+{
+width: 100%;
+height: 100%;
+transition: all 500ms ease-out;
+}
+.plt figure .capa
+{
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+background: rgb(136, 193, 0.5);
+opacity:0 ;
+transition: all 500ms ease-out;
+visibility: hidden;
+
+
+}
+.plt figure:hover > .capa
+{
+    opacity: 0.6;
+    visibility: visible;
+}
+.plt figure:hover > .capa h3
+{
+margin-top: 50px;
+margin-bottom: 5px;
+}
+.plt figure .capa h3
+{
+color: black;
+font-weight: 400;
+margin-bottom: 90px;
+transition: all 500ms ease-out;
+margin-top: 30px;
+font-weight: bolder;
+text-align: center;
+}
+.plt figure .capa p
+{
+color: black;
+font-size: 14px;
+width: 100%;
+max-width: 280px;
+margin: auto;
+font-weight: bolder;
+text-align: justify;
+}
+ 
+.orna{
+    top: 94px;
+    bottom: 10px;
+}
+.medi{
+    top: 94px;
+    bottom: 10px;
+}
+.or
+{
+    
+    margin-left: 25px;
+    margin-right: 300px;
+    text-align: justify;
+    margin-bottom: 140px;
+    margin-top: 73px;
+}
+
+.vision{
+    margin-left: 25px;
+    margin-right: 300px;
+    text-align: justify;
+    margin-bottom: 150px;
+    margin-top: -148px;
+}
+
+.valores{
+    margin-left: 25px;
+    margin-right: 300px;
+    text-align: justify;
+    margin-bottom: 150px;
+    margin-top: -146px;
+}
+
+.somos{
+    margin-left: 25px;
+    margin-right: 300px;
+    text-align: justify;
+    margin-bottom: 150px;
+    margin-top: -143px;
+}
+
+.hacer{
+    margin-left: 25px;
+    margin-right: 300px;
+    text-align: justify;
+    margin-bottom: 150px;
+    margin-top: -140px;
+}
+.normal{
+    text-align: justify;
+    margin-left: 26px;
+    margin-right: 329px;
+    margin-bottom: 194px;
+    margin-top: -143px;
+}
+.mec
+{
+    margin-left: 25px;
+    margin-right: 300px;
+    text-align: justify;
+}
+
+#t1
+{
+margin-top: -201px;
+margin-left: 250px;
+}
+#t2
+{
+    margin-left: 250px;
+}
+
+
+.slider-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.slider-container img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 2s ease-in-out;
+}
+
+.slider-container img:first-child {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 0;
+}
+
+
+@keyframes slide {
+	0% {
+		opacity: 0;
+	}
+	12.5% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	37.5% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.slider-container img:nth-child(1) {
+	animation: slide 15s infinite;
+}
+
+.slider-container img:nth-child(2) {
+	animation: slide 15s infinite 5s;
+}
+
+.slider-container img:nth-child(3) {
+	animation: slide 15s infinite 10s;
+}
+
+.slider-container img:nth-child(4) {
+	animation: slide 15s infinite 15s;
+}
+
+form
+{
+    background: #d5d47e;
+    border-radius: 5px;
+    margin-left: 5;
+    margin-bottom: 352px;
+    padding-bottom: -164px;
+    margin-top: -213px;
+	
+}
+
+.plt2
+{
+    width: 90%;
+    height: 35vh;
+    
+}
+.plt2 figure
+{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+
+}
+.plt2 figure img
+{
+    width: 100%;
+    height: 100%;
+}
+.plt2b
+{
+    width: 90%;
+    height: 35vh;
+ 
+}
+.plt2b figure
+{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+
+}
+.plt2b figure img
+{
+    width: 100%;
+    height: 100%;
+   
+}
+.plt2c
+{
+    width: 100%;
+    height: 35vh;
+
+}
+.plt2c figure
+{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+
+}
+.plt2c figure img
+{
+    width: 100%;
+    height: 100%;
+}
+.plt2_
+{
+    width: 90%;
+    height: 35vh;
+    
+}
+.plt2_ figure
+{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    margin-bottom: 150px;
+    
+   
+}
+.plt2_ figure img
+{
+    width: 100%;
+    height: 100%;
+}
+.plt2b_
+{
+    width: 90%;
+    height: 35vh;
+ 
+}
+.plt2b_ figure
+{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    margin-bottom: 300px;
+}
+.plt2b_ figure img
+{
+    width: 100%;
+    height: 100%;
+   
+}
+.plt2c_
+{
+    width: 100%;
+    height: 35vh;
+
+}
+.plt2c_ figure
+{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    
+    margin-bottom: 200px;
+}
+.plt2c_ figure img
+{
+    width: 100%;
+    height: 100%;
+}
+
+#cui
+{
+    margin: -45px 365px 25px 235px;
+    text-align: justify;
+}
+#vid
+{
+    
+    margin-left: 20px
+}
+
+.medicitexto{
+    text-align: justify;
+    margin-left: -4px;
+    margin-right: 515px;
+    margin-bottom: 17px;
+    margin-top: 22px;
+}
+
+.serv{
+    margin-left: 294px;
+    margin-top: 187px;
+    text-align: justify;
+}
+.list{
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 505px;
+}
+
+.coca{
+    margin-top: -2238px;
+    margin-bottom: 2435px;
+    margin-left: 1035px;
+    margin-right: -45px;
+    height: 686px;
+    width: 309px;
+    
+   
+}
+
+.redes{
+    margin-bottom: 2px;
+    margin-left: 600px;
+}
+
+
+
+footer
+{
+    margin-top: -528px;
+    background: rgb(223, 223, 177);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    
+}
